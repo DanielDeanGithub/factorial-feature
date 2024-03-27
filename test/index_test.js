@@ -26,5 +26,17 @@ describe('Calculate', () => {
       // Verify
       assert.equal(actualResult, expectedResult);      
     });
+
+    it('returns 1 when you pass in 0', () => {
+      // Setup
+      const inputNumber = 0;
+      const expectedResult = 1;
+      
+      // Exercise
+      const actualResult = Calculate.factorial(inputNumber);
+
+      // Verify
+      assert.equal(actualResult, expectedResult);      
+    });
   });
 });
