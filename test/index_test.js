@@ -3,7 +3,7 @@ var Calculate =  require('../index.js')
 
 describe('Calculate', () => {
   describe('.factorial', () => {
-    it('test the output of 5! is equal to 120', () => {
+    it('returns 120 when you pass in 5', () => {
       // Setup
       const inputNumber = 5;
       const expectedResult = 120;
@@ -15,7 +15,7 @@ describe('Calculate', () => {
       assert.equal(actualResult, expectedResult);      
     }); 
 
-    it('test the output of 3! is equal to 6', () => {
+    it('returns 6 when you pass in 3', () => {
       // Setup
       const inputNumber = 3;
       const expectedResult = 6;
