@@ -14,5 +14,17 @@ describe('Calculate', () => {
       // Verify
       assert.equal(actualResult, expectedResult);      
     }); 
+
+    it('test the output of 3! is equal to 6', () => {
+      // Setup
+      const inputNumber = 3;
+      const expectedResult = 6;
+      
+      // Exercise
+      const actualResult = Calculate.factorial(inputNumber);
+
+      // Verify
+      assert.equal(actualResult, expectedResult);      
+    });
   });
 });
