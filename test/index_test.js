@@ -44,10 +44,10 @@ describe('Calculate', () => {
       const inputString = "a";
       const expectedResult = RangeError;
 
-
+      // Verify
       assert.throws(() => {
-        Calculate.factorial("a");
-      }, RangeError);
+        Calculate.factorial(inputString); // Exercise
+      }, expectedResult);
     });
   });
 });
