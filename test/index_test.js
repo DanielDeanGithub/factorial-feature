@@ -40,7 +40,11 @@ describe('Calculate', () => {
     });
 
     it("throws an error if input type isn't an int", () => {
-      
+      // Setup
+      const inputString = "a";
+      const expectedResult = RangeError;
+
+
       assert.throws(() => {
         Calculate.factorial("a");
       }, RangeError);
