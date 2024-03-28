@@ -41,6 +41,9 @@ describe('Calculate', () => {
 
     it("throws an error if input type isn't an int", () => {
       
+      assert.throws(() => {
+        Calculate.factorial("a");
+      }, RangeError);
     });
   });
 });
