@@ -38,5 +38,9 @@ describe('Calculate', () => {
       // Verify
       assert.equal(actualResult, expectedResult);      
     });
+
+    it("throws an error if input type isn't an int", () => {
+      
+    });
   });
 });
